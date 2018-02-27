@@ -10,7 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   moveit_msgs
   roscpp
   shape_msgs
-  shape_tools
+  geometric_shapes
   std_msgs
   object_msgs 
   eigen_conversions
@@ -37,6 +37,7 @@ catkin_package(
 ## Build ##
 ###########
 
+add_definitions(-std=c++11)
 add_definitions(${convenience_ros_functions_DEFINITIONS})
 
 ## Specify additional locations of header files
